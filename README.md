@@ -43,7 +43,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 irm https://raw.githubusercontent.com/Harish020904/Acheron/main/bootstrap/install.ps1 | iex
 ```
 
-### macOS (Terminal)
+### macOS & Linux (Terminal)
 Open your terminal and run:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Harish020904/Acheron/main/bootstrap/install.sh | bash

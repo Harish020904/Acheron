@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # install.sh
-# Project Acheron macOS Bootstrap Installer
+# Project Acheron macOS & Linux Bootstrap Installer
 #
 # Usage:
-# curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/acheron/main/bootstrap/install.sh | bash
+# curl -fsSL https://raw.githubusercontent.com/Harish020904/Acheron/main/bootstrap/install.sh | bash
 # ==============================================================================
 
 set -e # Exit immediately on error
@@ -15,6 +15,8 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 CYAN='\033[0;36m'
 NC='\033[0m'
+
+OS="$(uname -s)"
 
 function write_step() {
     echo -e "\n${CYAN}[ACHERON] $1${NC}"
@@ -36,9 +38,9 @@ function write_error_and_exit() {
 # ==============================================================================
 # STEP 1: Verify Permissions
 # ==============================================================================
-write_step "Initializing Acheron Bootstrap"
+write_step "Initializing Acheron Bootstrap ($OS)"
 if [ "$EUID" -eq 0 ]; then
-    write_error_and_exit "Please do not run this script as root/sudo. Homebrew will fail."
+    write_error_and_exit "Please do not run this script as root/sudo. Package managers and vcpkg will fail or mess up permissions."
 fi
 
 # ==============================================================================
@@ -46,15 +48,20 @@ fi
 # ==============================================================================
 write_step "Validating System Requirements"
 
-# RAM Check (Minimum 8GB)
-TOTAL_RAM_GB=$(($(sysctl -n hw.memsize) / 1024 / 1024 / 1024))
+if [ "$OS" == "Darwin" ]; then
+    TOTAL_RAM_GB=$(($(sysctl -n hw.memsize) / 1024 / 1024 / 1024))
+    FREE_SPACE_GB=$(df -g / | awk 'NR==2 {print $4}')
+else
+    # Linux (Ubuntu/Debian)
+    TOTAL_RAM_GB=$(awk '/MemTotal/ {printf "%.0f", $2/1024/1024}' /proc/meminfo)
+    FREE_SPACE_GB=$(df -BG / | awk 'NR==2 {print $4}' | sed 's/G//')
+fi
+
 write_info "Detected RAM: ${TOTAL_RAM_GB}GB"
 if [ "$TOTAL_RAM_GB" -lt 8 ]; then
     write_error_and_exit "Acheron requires at least 8GB of RAM to compile and run."
 fi
 
-# Disk Space Check (Minimum 10GB free on /)
-FREE_SPACE_GB=$(df -g / | awk 'NR==2 {print $4}')
 write_info "Free Disk Space (/): ${FREE_SPACE_GB}GB"
 if [ "$FREE_SPACE_GB" -lt 10 ]; then
     write_error_and_exit "Acheron requires at least 10GB of free space on / for toolchains."
@@ -63,26 +70,36 @@ fi
 write_success "System meets minimum requirements."
 
 # ==============================================================================
-# STEP 3: Install Toolchain via Homebrew
+# STEP 3: Install Toolchain
 # ==============================================================================
 write_step "Installing Toolchain Dependencies"
 
-if ! command -v xcode-select -p &>/dev/null; then
-    write_info "Installing Xcode Command Line Tools..."
-    xcode-select --install
-    write_error_and_exit "Please follow the GUI prompts to install Xcode CLT, then run this script again."
-fi
-write_success "Xcode Command Line Tools installed."
+if [ "$OS" == "Darwin" ]; then
+    if ! command -v xcode-select -p &>/dev/null; then
+        write_info "Installing Xcode Command Line Tools..."
+        xcode-select --install
+        write_error_and_exit "Please follow the GUI prompts to install Xcode CLT, then run this script again."
+    fi
+    write_success "Xcode Command Line Tools installed."
 
-if ! command -v brew &>/dev/null; then
-    write_info "Installing Homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null || /usr/local/bin/brew shellenv 2>/dev/null)"
-fi
-write_success "Homebrew installed."
+    if ! command -v brew &>/dev/null; then
+        write_info "Installing Homebrew..."
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null || /usr/local/bin/brew shellenv 2>/dev/null)"
+    fi
+    write_success "Homebrew installed."
 
-write_info "Installing cmake, ninja, vulkan-headers, vulkan-loader, git..."
-brew install cmake ninja vulkan-headers vulkan-loader git
+    write_info "Installing cmake, ninja, vulkan-headers, vulkan-loader, git..."
+    brew install cmake ninja vulkan-headers vulkan-loader git
+else
+    write_info "Requesting sudo password to install Linux packages via apt..."
+    sudo apt-get update -y
+    sudo apt-get install -y cmake ninja-build git build-essential curl unzip tar pkg-config
+    
+    write_info "Installing X11, Wayland, and Vulkan development libraries required for raylib/engine..."
+    sudo apt-get install -y libx11-dev libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev libgl1-mesa-dev libvulkan-dev vulkan-tools
+fi
+
 write_success "Toolchain installed."
 
 # ==============================================================================
@@ -113,19 +130,25 @@ export VCPKG_ROOT="$VCPKG_DIR"
 # STEP 5: Clone or Update Acheron Repository
 # ==============================================================================
 write_step "Fetching Acheron Source Code"
-TARGET_DIR="$HOME/Acheron"
+CURRENT_DIR="$(pwd)"
 REPO_URL="https://github.com/Harish020904/Acheron.git"
 
-if [ -d "$TARGET_DIR/.git" ]; then
-    write_info "Repository exists at $TARGET_DIR. Pulling latest changes..."
-    cd "$TARGET_DIR"
-    git pull origin main
-    write_success "Repository updated."
+if [ -d "$CURRENT_DIR/.git" ]; then
+    TARGET_DIR="$CURRENT_DIR"
+    write_info "Executing from existing repository at $TARGET_DIR"
+    write_success "Repository located."
 else
-    write_info "Cloning Acheron to $TARGET_DIR..."
-    git clone "$REPO_URL" "$TARGET_DIR"
-    cd "$TARGET_DIR"
-    write_success "Repository cloned."
+    TARGET_DIR="$HOME/Acheron"
+    if [ -d "$TARGET_DIR/.git" ]; then
+        write_info "Repository exists at $TARGET_DIR. Pulling latest changes..."
+        cd "$TARGET_DIR"
+        git pull origin main
+        write_success "Repository updated."
+    else
+        write_info "Cloning Acheron to $TARGET_DIR..."
+        git clone "$REPO_URL" "$TARGET_DIR"
+        write_success "Repository cloned."
+    fi
 fi
 
 # ==============================================================================
@@ -167,12 +190,13 @@ write_step "Launching Acheron..."
 EXE_PATH="$BIN_DIR/acheron"
 
 if [ -f "$EXE_PATH" ]; then
-    if command -v xattr &>/dev/null; then
+    if [ "$OS" == "Darwin" ] && command -v xattr &>/dev/null; then
         xattr -d com.apple.quarantine "$EXE_PATH" 2>/dev/null || true
     fi
     cd "$TARGET_DIR" # Run from root
-    "$EXE_PATH"
+    
     write_success "Acheron launched successfully!"
+    "$EXE_PATH"
 else
     write_error_and_exit "Executable not found at $EXE_PATH."
 fi
