@@ -32,77 +32,24 @@ The project exists to demonstrate robust engine architecture without relying on 
 
 ---
 
-## 3. Exact Prerequisites
+## 3. Quick Install (Bootstrap)
 
-To compile and run Acheron, you will need the following baseline tools installed.
-
-### Windows Requirements
-- **Visual Studio 2022 Community** (or higher) with the **"Desktop development with C++"** workload
-- **CMake** >= 3.28
-- **Git**
-- **PowerShell** 7+ (Standard Windows PowerShell 5.1 also works)
-
-### macOS Requirements
-- **Xcode Command Line Tools**
-- **Homebrew**
-- **CMake** >= 3.28
-- **Clang** (provided by Xcode CLT)
-- **Git**
-
----
-
-## 4. Automated Setup
-
-We provide automated setup scripts to validate your environment, install any missing lightweight packages, and configure the project. 
+Acheron uses a professional engine bootstrap system. A single command will automatically install the necessary toolchains (CMake, Ninja, Vulkan SDK, vcpkg, Visual Studio Build Tools/Xcode CLT), clone the repository, build the engine, and run it.
 
 ### Windows (PowerShell)
-Open a PowerShell prompt as Administrator and run:
+Open PowerShell **as Administrator** and run:
 ```powershell
-.\scripts\setup_windows.ps1
+Set-ExecutionPolicy Bypass -Scope Process -Force
+irm https://raw.githubusercontent.com/Harish020904/Acheron/main/bootstrap/install.ps1 | iex
 ```
-*This script will verify Visual Studio, check CMake, optionally configure vcpkg, and prepare the build folders.*
 
 ### macOS (Terminal)
 Open your terminal and run:
 ```bash
-chmod +x ./scripts/setup_macos.sh
-./scripts/setup_macos.sh
-```
-*This script will verify Clang, install CMake/Ninja via Homebrew, fetch necessary components, and create build directories.*
-
----
-
-## 5. Build Guide
-
-Building the project generates the executables via CMake presets.
-
-### Windows Build
-```powershell
-.\scripts\build_windows.ps1
-```
-**Output:** `build/bin/acheron.exe`
-
-### macOS Build
-```bash
-./scripts/build_macos.sh
-```
-**Output:** `build/bin/acheron`
-
----
-
-## 6. Run Guide
-
-You can launch the compiled simulation directly via our run scripts.
-
-### Windows
-```powershell
-.\scripts\run_windows.ps1
+curl -fsSL https://raw.githubusercontent.com/Harish020904/Acheron/main/bootstrap/install.sh | bash
 ```
 
-### macOS
-```bash
-./scripts/run_macos.sh
-```
+> **Note:** The bootstrap scripts will automatically check for minimum system requirements (8GB+ RAM, 10GB+ Free Disk Space) before proceeding.
 
 ---
 
