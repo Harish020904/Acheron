@@ -1,0 +1,101 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": { "major": 3, "minor": 21, "patch": 0 },
+    "configurePresets": [
+        {
+            "name": "base",
+            "hidden": true,
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "BUILD_EXAMPLES": "OFF",
+                "BUILD_GAMES": "OFF",
+                "BUILD_SHARED_LIBS": "OFF"
+            }
+        },
+        {
+            "name": "windows-release",
+            "displayName": "Windows — Release",
+            "description": "Windows Release build (Ninja). Works with MSVC, MinGW, or Clang.",
+            "inherits": "base",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "windows-debug",
+            "displayName": "Windows — Debug",
+            "description": "Windows Debug build (Ninja).",
+            "inherits": "base",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "macos-release",
+            "displayName": "macOS — Release",
+            "description": "macOS Release build. Works with AppleClang (Xcode CLT) or Clang.",
+            "inherits": "base",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "11.0"
+            }
+        },
+        {
+            "name": "macos-debug",
+            "displayName": "macOS — Debug",
+            "description": "macOS Debug build.",
+            "inherits": "base",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "11.0"
+            }
+        },
+        {
+            "name": "macos-ninja-release",
+            "displayName": "macOS — Release (Ninja, faster)",
+            "description": "macOS Release with Ninja generator for faster incremental builds.",
+            "inherits": "base",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "11.0"
+            }
+        },
+        {
+            "name": "default",
+            "displayName": "Default (auto-detect platform)",
+            "description": "Ninja Release build. Use windows-release or macos-release for explicit control.",
+            "inherits": "base",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "build-windows-release",
+            "displayName": "Build Windows Release",
+            "configurePreset": "windows-release"
+        },
+        {
+            "name": "build-windows-debug",
+            "displayName": "Build Windows Debug",
+            "configurePreset": "windows-debug"
+        },
+        {
+            "name": "build-macos-release",
+            "displayName": "Build macOS Release",
+            "configurePreset": "macos-release"
+        },
+        {
+            "name": "build-macos-debug",
+            "displayName": "Build macOS Debug",
+            "configurePreset": "macos-debug"
+        }
+    ]
+}

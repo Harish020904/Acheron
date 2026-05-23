@@ -1,0 +1,59 @@
+# =============================================================
+# Acheron — .gitignore
+# =============================================================
+
+# Build outputs (executables, object files, libraries)
+/build/bin/
+/build/obj/
+/build/temp/
+/build/dist/
+
+# CMake build internals
+/build/CMakeFiles/
+/build/CMakeCache.txt
+/build/cmake_install.cmake
+/build/CTestTestfile.cmake
+/build/Makefile
+/build/build.ninja
+/build/rules.ninja
+/build/.ninja_deps
+/build/.ninja_log
+/build/_CPack_Packages/
+/build/*.cmake
+
+# FetchContent downloads (auto-managed, do NOT commit)
+/build/_deps/
+
+# VS/MSVC artifacts
+*.exe
+*.pdb
+*.obj
+*.dll
+*.lib
+*.ilk
+*.exp
+*.suo
+*.user
+.vs/
+
+# macOS artifacts
+*.dSYM/
+.DS_Store
+
+# CLion
+.idea/
+cmake-build-*/
+
+# VS Code (keep .vscode/settings.json if you need it, but not launch configs)
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+
+# Compiled Python (OSM data pipeline)
+__pycache__/
+*.pyc
+
+# Save states (user-generated, not source)
+save_state.bin
+
+# Log files
+*.log

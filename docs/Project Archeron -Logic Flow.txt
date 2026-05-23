@@ -1,0 +1,1081 @@
+# Project Acheron — Level 4 Technical Specification
+
+## Million-Agent Urban Simulation Kernel
+
+### C++20/23 Systems Architecture
+
+---
+
+# 1. The Hierarchical ECS Kernel (The Backbone)
+
+The ECS is not an “entity system.”
+It is a cache-optimized memory database.
+
+At 1,000,000+ agents:
+
+* inheritance fails
+* virtual dispatch fails
+* pointer chasing fails
+* heap allocation fails
+
+The ECS must optimize:
+
+* contiguous iteration
+* SIMD traversal
+* prefetch predictability
+* deterministic memory ownership
+
+---
+
+## 1.1 Data Layout
+
+The architecture uses:
+
+* Archetype Chunks
+* Struct-of-Arrays (SoA)
+* 16KB fixed chunks
+* Manual alignment
+* Stable type metadata
+
+Do NOT use:
+
+* `std::vector<BaseComponent*>`
+* RTTI
+* polymorphic hierarchies
+
+---
+
+## Core Memory Model
+
+Each archetype owns:
+
+* a fixed chunk list
+* contiguous component columns
+* entity metadata
+
+Each chunk:
+
+* stores entities sharing identical component signatures
+
+Example archetype:
+
+```cpp
+Position + Velocity + TrafficAgent + EconomicState
+```
+
+---
+
+## Chunk Layout
+
+```cpp
+constexpr size_t CHUNK_SIZE = 16 * 1024;
+
+struct alignas(64) ArchetypeChunk
+{
+    std::byte* componentBuffers[MAX_COMPONENTS];
+
+    uint32_t entityCount;
+    uint32_t capacity;
+
+    EntityID entities[CHUNK_ENTITY_CAP];
+
+    ArchetypeChunk* next;
+};
+```
+
+---
+
+## SoA Component Layout
+
+BAD:
+
+```cpp
+struct Agent
+{
+    Position p;
+    Velocity v;
+    Traffic t;
+};
+```
+
+This destroys SIMD traversal.
+
+---
+
+CORRECT:
+
+```cpp
+struct PositionArray
+{
+    alignas(64) float x[CHUNK_ENTITY_CAP];
+    alignas(64) float y[CHUNK_ENTITY_CAP];
+};
+
+struct VelocityArray
+{
+    alignas(64) float vx[CHUNK_ENTITY_CAP];
+    alignas(64) float vy[CHUNK_ENTITY_CAP];
+};
+```
+
+Now AVX2 can process:
+
+* 8 floats simultaneously
+* sequential memory
+* no branch divergence
+
+---
+
+## Manual Allocation with std::byte
+
+```cpp
+struct ComponentColumn
+{
+    std::byte* buffer;
+    size_t stride;
+    size_t alignment;
+};
+```
+
+Allocation:
+
+```cpp
+buffer = static_cast<std::byte*>(
+    std::aligned_alloc(alignment, stride * capacity)
+);
+```
+
+---
+
+## Hardware Consequence
+
+Contiguous SoA traversal:
+
+```cpp
+for (size_t i = 0; i < count; i += 8)
+```
+
+allows:
+
+* hardware prefetchers
+* SIMD vector loads
+* fewer TLB misses
+* reduced L1 eviction
+
+AoS layouts force:
+
+* scattered memory fetches
+* partial cache line usage
+* branch-heavy traversal
+
+---
+
+# 1.2 Generational Entity Indexing
+
+Raw pointers are forbidden.
+
+Entity references use:
+
+```cpp
+struct EntityID
+{
+    uint32_t index;
+    uint32_t generation;
+};
+```
+
+---
+
+## Entity Table
+
+```cpp
+struct EntityRecord
+{
+    ArchetypeChunk* chunk;
+    uint32_t row;
+    uint32_t generation;
+};
+```
+
+Global lookup:
+
+```cpp
+std::vector<EntityRecord> entityTable;
+```
+
+---
+
+## Deletion Logic
+
+When deleting:
+
+Step 1:
+Increment generation.
+
+```cpp
+record.generation++;
+```
+
+Step 2:
+Push index into freelist.
+
+```cpp
+freeIndices.push(recordIndex);
+```
+
+Step 3:
+Invalidate stale references automatically.
+
+---
+
+## Validation
+
+```cpp
+bool IsAlive(EntityID id)
+{
+    return entityTable[id.index].generation == id.generation;
+}
+```
+
+---
+
+## Hardware Consequence
+
+No dangling pointers.
+No heap ownership ambiguity.
+No pointer invalidation cascades.
+
+Stable integer IDs:
+
+* serialize efficiently
+* replicate efficiently
+* SIMD compare efficiently
+
+---
+
+# 1.3 C++20 Concepts
+
+All components constrained at compile time.
+
+---
+
+## Component Concept
+
+```cpp
+template<typename T>
+concept Component =
+    std::is_trivially_copyable_v<T> &&
+    std::is_standard_layout_v<T>;
+```
+
+---
+
+## Registration
+
+```cpp
+template<Component T>
+ComponentType RegisterComponent();
+```
+
+---
+
+## Why?
+
+Forces:
+
+* memcpy-safe movement
+* no vtables
+* deterministic layouts
+* cache-compatible storage
+
+---
+
+## Hardware Consequence
+
+Trivial layout allows:
+
+* bulk memcpy migration
+* SIMD reinterpretation
+* zero constructor overhead
+
+---
+
+# Logic Flow — ECS
+
+Step 1:
+Entity allocated from freelist.
+
+↓
+
+Step 2:
+Archetype identified by component signature hash.
+
+↓
+
+Step 3:
+Components appended into chunk columns.
+
+↓
+
+Step 4:
+Systems iterate contiguous arrays.
+
+↓
+
+Step 5:
+Destroyed entities recycle indices safely.
+
+---
+
+# 2. Massive-Scale Concurrency (The Heartbeat)
+
+---
+
+# 2.1 Fiber-Based Job System
+
+The scheduler is not thread-oriented.
+
+It is:
+
+* task-oriented
+* dependency-oriented
+* work-stealing
+
+Threads are workers only.
+
+---
+
+## Core Architecture
+
+Worker count:
+
+```cpp
+const uint32_t workers =
+    std::thread::hardware_concurrency();
+```
+
+Each worker owns:
+
+* local deque
+* fiber pool
+* scratch allocator
+
+---
+
+## Job Structure
+
+```cpp
+struct Job
+{
+    void (*entry)(void*);
+    void* data;
+
+    std::atomic<uint32_t> unfinishedJobs;
+};
+```
+
+---
+
+## Fiber Model
+
+Each job:
+
+* suspends without blocking OS thread
+* resumes later
+* avoids kernel scheduler overhead
+
+Critical for:
+
+* pathfinding
+* streaming
+* async dependency waits
+
+---
+
+## Work Stealing
+
+Workers:
+
+* pop locally from bottom
+* steal remotely from top
+
+Deque:
+
+```cpp
+alignas(64) std::atomic<uint64_t> top;
+alignas(64) std::atomic<uint64_t> bottom;
+```
+
+This reduces:
+
+* lock contention
+* false sharing
+* global queue bottlenecks
+
+---
+
+## Mapping 1,000,000 Agents
+
+DO NOT:
+schedule per-agent jobs.
+
+Instead:
+
+```cpp
+1 job = 4096 agents
+```
+
+Example:
+
+```cpp
+for (size_t i = 0; i < agents; i += 4096)
+{
+    Schedule(UpdateAgents, range);
+}
+```
+
+---
+
+## Hardware Consequence
+
+Chunk scheduling:
+
+* amortizes scheduler overhead
+* improves instruction cache reuse
+* improves branch predictor stability
+
+Per-agent jobs would destroy:
+
+* context locality
+* queue contention
+* scheduler throughput
+
+---
+
+# 2.2 Lock-Free Communication
+
+Render thread NEVER touches simulation memory directly.
+
+Use:
+
+* double-buffer snapshots
+* lock-free ring buffers
+
+---
+
+## Render Snapshot
+
+```cpp
+struct RenderSnapshot
+{
+    PositionSoA positions;
+    RenderableSoA renderables;
+};
+```
+
+Swap:
+
+```cpp
+std::atomic<RenderSnapshot*> active;
+```
+
+---
+
+## Ring Buffer
+
+```cpp
+template<typename T, size_t Capacity>
+struct RingBuffer
+{
+    alignas(64) std::atomic<size_t> head;
+    alignas(64) std::atomic<size_t> tail;
+
+    T buffer[Capacity];
+};
+```
+
+---
+
+## Hardware Consequence
+
+Separate cache lines for head/tail prevent:
+
+* false sharing
+* MESI invalidation storms
+
+---
+
+# 2.3 Phase Barriers
+
+Simulation phases must remain deterministic.
+
+Example order:
+
+```text
+Traffic
+→ Logistics
+→ Economy
+→ Crowd
+→ Rendering Snapshot
+```
+
+---
+
+## Barrier Logic
+
+```cpp
+struct PhaseBarrier
+{
+    std::atomic<uint32_t> counter;
+    uint32_t target;
+};
+```
+
+Worker completion:
+
+```cpp
+if (++barrier.counter == barrier.target)
+{
+    AdvancePhase();
+}
+```
+
+---
+
+# Logic Flow — Scheduler
+
+Step 1:
+Frame decomposed into tasks.
+
+↓
+
+Step 2:
+Workers process local queues.
+
+↓
+
+Step 3:
+Idle workers steal remotely.
+
+↓
+
+Step 4:
+Barrier waits for phase completion.
+
+↓
+
+Step 5:
+Next deterministic phase begins.
+
+---
+
+# 3. Spatial Query & Pathfinding (The Brain)
+
+---
+
+# 3.1 Linear Quadtree vs Dynamic BVH
+
+## Dynamic BVH
+
+Best for:
+
+* sparse moving objects
+* raycasts
+* collision systems
+
+Bad for:
+
+* city-scale grids
+* cache locality
+* deterministic traversal
+
+---
+
+## Linear Quadtree
+
+Best for:
+
+* static urban topology
+* traffic density fields
+* flow propagation
+* contiguous traversal
+
+Acheron should use:
+
+# Linear Quadtree
+
+---
+
+## Node Layout
+
+```cpp
+struct alignas(64) LinearNode
+{
+    uint32_t mortonCode;
+
+    uint32_t firstChild;
+    uint32_t childCount;
+
+    uint32_t objectOffset;
+    uint32_t objectCount;
+};
+```
+
+Nodes stored in Morton order.
+
+---
+
+## Hardware Consequence
+
+Morton ordering:
+
+* preserves spatial locality
+* improves hardware prefetch
+* reduces traversal divergence
+
+Pointer trees destroy:
+
+* cache locality
+* branch prediction
+
+---
+
+# 3.2 Contiguous Spatial Storage
+
+```cpp
+std::vector<LinearNode> nodes;
+std::vector<EntityID> spatialEntities;
+```
+
+Traversal becomes:
+
+```cpp
+for (uint32_t i = start; i < end; ++i)
+```
+
+instead of:
+recursive pointer chasing.
+
+---
+
+# 3.3 Flow Field Navigation
+
+Pathfinding for millions of agents cannot use A* individually.
+
+Instead:
+
+* district-level flow fields
+* local steering only
+
+---
+
+## Grid Cost Propagation
+
+```cpp
+struct GridCell
+{
+    uint16_t cost;
+    uint16_t integration;
+    uint8_t flowDir;
+};
+```
+
+---
+
+## BFS Propagation
+
+```cpp
+queue.push(goal);
+
+while (!queue.empty())
+{
+    auto cell = queue.front();
+
+    for (auto neighbor : neighbors)
+    {
+        uint16_t newCost =
+            cell.integration + neighbor.cost;
+
+        if (newCost < neighbor.integration)
+        {
+            neighbor.integration = newCost;
+            queue.push(neighbor);
+        }
+    }
+}
+```
+
+---
+
+## Hardware Consequence
+
+Grid arrays:
+
+* sequential traversal
+* branch coherence
+* SIMD-friendly neighbor evaluation
+
+A* per agent would:
+
+* explode CPU time
+* thrash caches
+* fragment traversal
+
+---
+
+# Logic Flow — Pathfinding
+
+Step 1:
+Destination seeds integration field.
+
+↓
+
+Step 2:
+Costs propagate outward.
+
+↓
+
+Step 3:
+Each cell stores cheapest direction.
+
+↓
+
+Step 4:
+Agents sample local flow vector only.
+
+---
+
+# 4. The Simulation Systems
+
+---
+
+# 4.1 Continuum Traffic Model
+
+Vehicles represented as density fields.
+
+Not:
+individual rigid bodies.
+
+---
+
+## Road Segment
+
+```cpp
+struct alignas(64) RoadChunk
+{
+    float density[LANES];
+    float velocity[LANES];
+    float flowRate[LANES];
+};
+```
+
+---
+
+## Fundamental Equation
+
+Traffic flow:
+
+q = \rho v
+
+Where:
+
+* q = flow
+* ρ = density
+* v = average velocity
+
+---
+
+## Velocity Function
+
+v = v_{max}(1 - \rho/\rho_{max})
+
+---
+
+## Update Function
+
+```cpp
+void UpdateRoad(RoadChunk& r, float dt)
+{
+    for (size_t i = 0; i < LANES; ++i)
+    {
+        r.velocity[i] =
+            vmax * (1.0f - r.density[i] / maxDensity);
+
+        r.flowRate[i] =
+            r.density[i] * r.velocity[i];
+
+        r.density[i] +=
+            dt * (incoming[i] - outgoing[i]);
+    }
+}
+```
+
+---
+
+## Hardware Consequence
+
+Dense float arrays:
+
+* vectorize naturally
+* fit AVX lanes
+* predictable memory access
+
+Rigid-body traffic:
+
+* branch-heavy
+* collision-heavy
+* impossible at city scale
+
+---
+
+# 4.2 Resource Propagation Economy
+
+Economy modeled as:
+
+* graph propagation
+* inventory diffusion
+
+---
+
+## Producer Layout
+
+```cpp
+struct alignas(64) ProducerChunk
+{
+    float productionRate[SIMD_WIDTH];
+    float inventory[SIMD_WIDTH];
+    float demand[SIMD_WIDTH];
+};
+```
+
+---
+
+## SIMD Update
+
+```cpp
+inventory += production * dt;
+inventory -= outgoing * dt;
+```
+
+AVX operates on:
+8 producers simultaneously.
+
+---
+
+## Resource Network
+
+```cpp
+struct TradeEdge
+{
+    uint32_t from;
+    uint32_t to;
+    float capacity;
+};
+```
+
+---
+
+# Logic Flow — Economy
+
+Step 1:
+Factories generate resources.
+
+↓
+
+Step 2:
+Demand graph evaluated.
+
+↓
+
+Step 3:
+Resources pushed along edges.
+
+↓
+
+Step 4:
+Shortages propagate downstream.
+
+↓
+
+Step 5:
+Traffic demand updated from logistics load.
+
+---
+
+## Hardware Consequence
+
+Flat arrays:
+
+* maximize SIMD occupancy
+* minimize branch divergence
+
+Graph edges contiguous:
+
+* sequential traversal
+* fewer cache misses
+
+---
+
+# 5. C++23 Implementation Strategy
+
+---
+
+# 5.1 Modules
+
+Massive codebases collapse under header inclusion.
+
+Use:
+
+* C++20 modules
+* unity-free builds
+
+---
+
+## Example
+
+```cpp
+export module ecs.core;
+
+export struct EntityID
+{
+    uint32_t index;
+    uint32_t generation;
+};
+```
+
+Import:
+
+```cpp
+import ecs.core;
+```
+
+---
+
+## Benefits
+
+Modules eliminate:
+
+* repeated parsing
+* macro pollution
+* transitive include explosions
+
+---
+
+## Hardware/Build Consequence
+
+Compile times:
+
+* dramatically reduced
+* better parallel compilation
+* smaller dependency graph
+
+Critical at:
+
+* 500k+ LOC
+
+---
+
+# 5.2 Memory Safety & Allocators
+
+The default heap allocator will fragment catastrophically.
+
+You need:
+
+* frame allocators
+* arenas
+* monotonic allocators
+
+---
+
+## Monotonic Allocator
+
+```cpp
+struct LinearAllocator
+{
+    std::byte* memory;
+    size_t offset;
+    size_t capacity;
+};
+```
+
+Allocate:
+
+```cpp
+void* Allocate(size_t size, size_t align)
+{
+    size_t aligned =
+        (offset + align - 1) & ~(align - 1);
+
+    void* ptr = memory + aligned;
+
+    offset = aligned + size;
+
+    return ptr;
+}
+```
+
+Reset once per frame.
+
+No frees.
+
+---
+
+# std::span Usage
+
+```cpp
+void UpdateAgents(std::span<Position> positions);
+```
+
+Benefits:
+
+* bounds-safe views
+* no ownership ambiguity
+* zero-copy slicing
+
+---
+
+## Hardware Consequence
+
+Arena allocation:
+
+* eliminates allocator contention
+* eliminates heap fragmentation
+* improves temporal locality
+
+`std::span`:
+
+* avoids unnecessary vector copies
+* preserves contiguous traversal
+
+---
+
+# Final Architectural Principle
+
+Acheron is not a “game.”
+
+It is:
+
+* a distributed simulation kernel
+* a memory bandwidth optimization problem
+* a cache coherency problem
+* a deterministic scheduling problem
+
+The primary bottleneck will never be FLOPS.
+
+It will be:
+
+* cache misses
+* synchronization stalls
+* memory movement
+* branch misprediction
+* NUMA penalties
+
+Every subsystem must therefore optimize for:
+
+```text
+Contiguous memory
+Deterministic scheduling
+SIMD traversal
+Minimal synchronization
+Predictable branching
+```

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260520-2237-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.3.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="Harish"
+	OSRelease="10.0.26100"
+	OSVersion="Windows 10"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="0"
+	ModelID="0"
+	ModelName=""
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2048"
+	TotalPhysicalMemory="12030"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2000.000000"
+	>
+	<Testing>
+		<StartDateTime>May 23 11:39 India Standard Time</StartDateTime>
+		<StartTestTime>1779516543</StartTestTime>
+		<TestList/>
+		<EndDateTime>May 23 11:39 India Standard Time</EndDateTime>
+		<EndTestTime>1779516543</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

@@ -1,0 +1,50 @@
+{
+  "textures": [
+    {
+      "id": "tileset_tiny_town",
+      "path": "assets/tiles/tileset_tiny_town.png",
+      "category": "environment",
+      "sprite_width": 16,
+      "sprite_height": 16
+    },
+    {
+      "id": "tileset_cyberpunk",
+      "path": "assets/tiles/tileset_cyberpunk.png",
+      "category": "environment",
+      "sprite_width": 32,
+      "sprite_height": 32
+    },
+    {
+      "id": "ui_panel_dark",
+      "path": "assets/ui/ui_grey_button_rectangle_border.png",
+      "category": "ui",
+      "sprite_width": 38,
+      "sprite_height": 38
+    },
+    {
+      "id": "ui_arrow_east",
+      "path": "assets/ui/ui_grey_arrow_basic_e.png",
+      "category": "ui",
+      "sprite_width": 20,
+      "sprite_height": 20
+    }
+  ],
+  "fonts": [
+    {
+      "id": "orbitron_regular",
+      "path": "assets/fonts/orbitron_regular.ttf"
+    },
+    {
+      "id": "orbitron_medium",
+      "path": "assets/fonts/orbitron_medium.ttf"
+    },
+    {
+      "id": "orbitron_bold",
+      "path": "assets/fonts/orbitron_bold.ttf"
+    },
+    {
+      "id": "orbitron_black",
+      "path": "assets/fonts/orbitron_black.ttf"
+    }
+  ]
+}

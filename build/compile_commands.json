@@ -1,0 +1,794 @@
+[
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\main.cpp.obj -c D:\\projects\\Acheron\\src\\main.cpp",
+  "file": "D:/projects/Acheron/src/main.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\core\\application.cpp.obj -c D:\\projects\\Acheron\\src\\core\\application.cpp",
+  "file": "D:/projects/Acheron/src/core/application.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/core/application.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\core\\assert.cpp.obj -c D:\\projects\\Acheron\\src\\core\\assert.cpp",
+  "file": "D:/projects/Acheron/src/core/assert.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/core/assert.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\core\\crash_handler.cpp.obj -c D:\\projects\\Acheron\\src\\core\\crash_handler.cpp",
+  "file": "D:/projects/Acheron/src/core/crash_handler.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/core/crash_handler.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\core\\game_loop.cpp.obj -c D:\\projects\\Acheron\\src\\core\\game_loop.cpp",
+  "file": "D:/projects/Acheron/src/core/game_loop.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/core/game_loop.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\core\\logger.cpp.obj -c D:\\projects\\Acheron\\src\\core\\logger.cpp",
+  "file": "D:/projects/Acheron/src/core/logger.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/core/logger.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\core\\platform_layer.cpp.obj -c D:\\projects\\Acheron\\src\\core\\platform_layer.cpp",
+  "file": "D:/projects/Acheron/src/core/platform_layer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/core/platform_layer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\core\\time_system.cpp.obj -c D:\\projects\\Acheron\\src\\core\\time_system.cpp",
+  "file": "D:/projects/Acheron/src/core/time_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/core/time_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\archetype.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\archetype.cpp",
+  "file": "D:/projects/Acheron/src/ecs/archetype.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/archetype.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\chunk_migration.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\chunk_migration.cpp",
+  "file": "D:/projects/Acheron/src/ecs/chunk_migration.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/chunk_migration.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\component_registry.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\component_registry.cpp",
+  "file": "D:/projects/Acheron/src/ecs/component_registry.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/component_registry.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\entity_id.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\entity_id.cpp",
+  "file": "D:/projects/Acheron/src/ecs/entity_id.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/entity_id.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\memory\\chunk_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\memory\\chunk_allocator.cpp",
+  "file": "D:/projects/Acheron/src/ecs/memory/chunk_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/memory/chunk_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\memory\\linear_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\memory\\linear_allocator.cpp",
+  "file": "D:/projects/Acheron/src/ecs/memory/linear_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/memory/linear_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\query.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\query.cpp",
+  "file": "D:/projects/Acheron/src/ecs/query.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/query.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\systems\\ai_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\ai_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/ai_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/systems/ai_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\systems\\animation_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\animation_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/animation_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/systems/animation_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\systems\\audio_event_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\audio_event_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/audio_event_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/systems/audio_event_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\systems\\combat_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\combat_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/combat_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/systems/combat_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\systems\\movement_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\movement_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/movement_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/systems/movement_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\world.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\world.cpp",
+  "file": "D:/projects/Acheron/src/ecs/world.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/world.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ecs\\world_serializer.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\world_serializer.cpp",
+  "file": "D:/projects/Acheron/src/ecs/world_serializer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ecs/world_serializer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\threading\\lockfree_queue.cpp.obj -c D:\\projects\\Acheron\\src\\threading\\lockfree_queue.cpp",
+  "file": "D:/projects/Acheron/src/threading/lockfree_queue.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/threading/lockfree_queue.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\threading\\thread.cpp.obj -c D:\\projects\\Acheron\\src\\threading\\thread.cpp",
+  "file": "D:/projects/Acheron/src/threading/thread.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/threading/thread.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\simulation\\scheduler\\job_system.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\scheduler\\job_system.cpp",
+  "file": "D:/projects/Acheron/src/simulation/scheduler/job_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/simulation/scheduler/job_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\simulation\\scheduler\\phase_barrier.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\scheduler\\phase_barrier.cpp",
+  "file": "D:/projects/Acheron/src/simulation/scheduler/phase_barrier.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/simulation/scheduler/phase_barrier.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\simulation\\scheduler\\task_graph.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\scheduler\\task_graph.cpp",
+  "file": "D:/projects/Acheron/src/simulation/scheduler/task_graph.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/simulation/scheduler/task_graph.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\simulation\\traffic\\road_network.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\traffic\\road_network.cpp",
+  "file": "D:/projects/Acheron/src/simulation/traffic/road_network.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/simulation/traffic/road_network.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\simulation\\traffic\\traffic_system.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\traffic\\traffic_system.cpp",
+  "file": "D:/projects/Acheron/src/simulation/traffic/traffic_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/simulation/traffic/traffic_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\simulation\\economy\\economy_system.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\economy\\economy_system.cpp",
+  "file": "D:/projects/Acheron/src/simulation/economy/economy_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/simulation/economy/economy_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\simulation\\economy\\trade_network.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\economy\\trade_network.cpp",
+  "file": "D:/projects/Acheron/src/simulation/economy/trade_network.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/simulation/economy/trade_network.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\simulation\\citizens\\citizen_system.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\citizens\\citizen_system.cpp",
+  "file": "D:/projects/Acheron/src/simulation/citizens/citizen_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/simulation/citizens/citizen_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\gameplay\\event_system.cpp.obj -c D:\\projects\\Acheron\\src\\gameplay\\event_system.cpp",
+  "file": "D:/projects/Acheron/src/gameplay/event_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/gameplay/event_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\gameplay\\interaction_system.cpp.obj -c D:\\projects\\Acheron\\src\\gameplay\\interaction_system.cpp",
+  "file": "D:/projects/Acheron/src/gameplay/interaction_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/gameplay/interaction_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\gameplay\\progression\\progression_system.cpp.obj -c D:\\projects\\Acheron\\src\\gameplay\\progression\\progression_system.cpp",
+  "file": "D:/projects/Acheron/src/gameplay/progression/progression_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/gameplay/progression/progression_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\gameplay\\ui\\hud_controller.cpp.obj -c D:\\projects\\Acheron\\src\\gameplay\\ui\\hud_controller.cpp",
+  "file": "D:/projects/Acheron/src/gameplay/ui/hud_controller.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/gameplay/ui/hud_controller.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\gameplay\\ui\\menu_controller.cpp.obj -c D:\\projects\\Acheron\\src\\gameplay\\ui\\menu_controller.cpp",
+  "file": "D:/projects/Acheron/src/gameplay/ui/menu_controller.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/gameplay/ui/menu_controller.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\gameplay\\world\\city_generator.cpp.obj -c D:\\projects\\Acheron\\src\\gameplay\\world\\city_generator.cpp",
+  "file": "D:/projects/Acheron/src/gameplay/world/city_generator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/gameplay/world/city_generator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\gameplay\\world\\environment_system.cpp.obj -c D:\\projects\\Acheron\\src\\gameplay\\world\\environment_system.cpp",
+  "file": "D:/projects/Acheron/src/gameplay/world/environment_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/gameplay/world/environment_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\gameplay\\world\\level_loader.cpp.obj -c D:\\projects\\Acheron\\src\\gameplay\\world\\level_loader.cpp",
+  "file": "D:/projects/Acheron/src/gameplay/world/level_loader.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/gameplay/world/level_loader.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\melbourne_renderer.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\melbourne_renderer.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/melbourne_renderer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/melbourne_renderer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\mesh_manager.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\mesh_manager.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/mesh_manager.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/mesh_manager.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\overlay_renderer.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\overlay_renderer.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/overlay_renderer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/overlay_renderer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\renderer.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\renderer.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/renderer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/renderer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\road_renderer.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\road_renderer.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/road_renderer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/road_renderer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\simple_renderer.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\simple_renderer.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/simple_renderer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/simple_renderer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\texture_cache.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\texture_cache.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/texture_cache.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/texture_cache.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\texture_manager.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\texture_manager.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/texture_manager.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/texture_manager.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\tile_renderer.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\tile_renderer.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/tile_renderer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/tile_renderer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\renderer\\ui_renderer.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\renderer\\ui_renderer.cpp",
+  "file": "D:/projects/Acheron/src/engine/renderer/ui_renderer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/renderer/ui_renderer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\engine\\audio\\audio_manager.cpp.obj -c D:\\projects\\Acheron\\src\\engine\\audio\\audio_manager.cpp",
+  "file": "D:/projects/Acheron/src/engine/audio/audio_manager.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/engine/audio/audio_manager.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\file_system.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\file_system.cpp",
+  "file": "D:/projects/Acheron/src/utilities/file_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/file_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\hash_utils.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\hash_utils.cpp",
+  "file": "D:/projects/Acheron/src/utilities/hash_utils.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/hash_utils.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\json_serializer.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\json_serializer.cpp",
+  "file": "D:/projects/Acheron/src/utilities/json_serializer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/json_serializer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\memory\\frame_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\memory\\frame_allocator.cpp",
+  "file": "D:/projects/Acheron/src/utilities/memory/frame_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/memory/frame_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\memory\\linear_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\memory\\linear_allocator.cpp",
+  "file": "D:/projects/Acheron/src/utilities/memory/linear_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/memory/linear_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\memory\\memory_tracker.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\memory\\memory_tracker.cpp",
+  "file": "D:/projects/Acheron/src/utilities/memory/memory_tracker.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/memory/memory_tracker.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\memory\\pool_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\memory\\pool_allocator.cpp",
+  "file": "D:/projects/Acheron/src/utilities/memory/pool_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/memory/pool_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\profiler.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\profiler.cpp",
+  "file": "D:/projects/Acheron/src/utilities/profiler.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/profiler.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\utilities\\thread_pool.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\thread_pool.cpp",
+  "file": "D:/projects/Acheron/src/utilities/thread_pool.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/utilities/thread_pool.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ui\\debug_overlay.cpp.obj -c D:\\projects\\Acheron\\src\\ui\\debug_overlay.cpp",
+  "file": "D:/projects/Acheron/src/ui/debug_overlay.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ui/debug_overlay.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ui\\minimap_panel.cpp.obj -c D:\\projects\\Acheron\\src\\ui\\minimap_panel.cpp",
+  "file": "D:/projects/Acheron/src/ui/minimap_panel.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ui/minimap_panel.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ui\\profiler_panel.cpp.obj -c D:\\projects\\Acheron\\src\\ui\\profiler_panel.cpp",
+  "file": "D:/projects/Acheron/src/ui/profiler_panel.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ui/profiler_panel.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_VERSION_MAJOR=0 -DACHERON_VERSION_MINOR=7 -DACHERON_VERSION_PATCH=0 -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -ID:/projects/Acheron/src -ID:/projects/Acheron -ID:/projects/Acheron/build/_deps/raylib-src/src -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\acheron.dir\\src\\ui\\simulation_panel.cpp.obj -c D:\\projects\\Acheron\\src\\ui\\simulation_panel.cpp",
+  "file": "D:/projects/Acheron/src/ui/simulation_panel.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron.dir/src/ui/simulation_panel.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\tests\\unit\\ecs_tests.cpp.obj -c D:\\projects\\Acheron\\tests\\unit\\ecs_tests.cpp",
+  "file": "D:/projects/Acheron/tests/unit/ecs_tests.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/tests/unit/ecs_tests.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\tests\\unit\\math_tests.cpp.obj -c D:\\projects\\Acheron\\tests\\unit\\math_tests.cpp",
+  "file": "D:/projects/Acheron/tests/unit/math_tests.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/tests/unit/math_tests.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\tests\\unit\\memory_tests.cpp.obj -c D:\\projects\\Acheron\\tests\\unit\\memory_tests.cpp",
+  "file": "D:/projects/Acheron/tests/unit/memory_tests.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/tests/unit/memory_tests.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\tests\\unit\\physics_tests.cpp.obj -c D:\\projects\\Acheron\\tests\\unit\\physics_tests.cpp",
+  "file": "D:/projects/Acheron/tests/unit/physics_tests.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/tests/unit/physics_tests.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\tests\\unit\\serialization_tests.cpp.obj -c D:\\projects\\Acheron\\tests\\unit\\serialization_tests.cpp",
+  "file": "D:/projects/Acheron/tests/unit/serialization_tests.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/tests/unit/serialization_tests.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\core\\application.cpp.obj -c D:\\projects\\Acheron\\src\\core\\application.cpp",
+  "file": "D:/projects/Acheron/src/core/application.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/core/application.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\core\\assert.cpp.obj -c D:\\projects\\Acheron\\src\\core\\assert.cpp",
+  "file": "D:/projects/Acheron/src/core/assert.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/core/assert.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\core\\crash_handler.cpp.obj -c D:\\projects\\Acheron\\src\\core\\crash_handler.cpp",
+  "file": "D:/projects/Acheron/src/core/crash_handler.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/core/crash_handler.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\core\\game_loop.cpp.obj -c D:\\projects\\Acheron\\src\\core\\game_loop.cpp",
+  "file": "D:/projects/Acheron/src/core/game_loop.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/core/game_loop.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\core\\logger.cpp.obj -c D:\\projects\\Acheron\\src\\core\\logger.cpp",
+  "file": "D:/projects/Acheron/src/core/logger.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/core/logger.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\core\\platform_layer.cpp.obj -c D:\\projects\\Acheron\\src\\core\\platform_layer.cpp",
+  "file": "D:/projects/Acheron/src/core/platform_layer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/core/platform_layer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\core\\time_system.cpp.obj -c D:\\projects\\Acheron\\src\\core\\time_system.cpp",
+  "file": "D:/projects/Acheron/src/core/time_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/core/time_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\archetype.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\archetype.cpp",
+  "file": "D:/projects/Acheron/src/ecs/archetype.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/archetype.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\chunk_migration.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\chunk_migration.cpp",
+  "file": "D:/projects/Acheron/src/ecs/chunk_migration.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/chunk_migration.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\component_registry.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\component_registry.cpp",
+  "file": "D:/projects/Acheron/src/ecs/component_registry.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/component_registry.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\entity_id.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\entity_id.cpp",
+  "file": "D:/projects/Acheron/src/ecs/entity_id.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/entity_id.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\memory\\chunk_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\memory\\chunk_allocator.cpp",
+  "file": "D:/projects/Acheron/src/ecs/memory/chunk_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/memory/chunk_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\memory\\linear_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\memory\\linear_allocator.cpp",
+  "file": "D:/projects/Acheron/src/ecs/memory/linear_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/memory/linear_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\query.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\query.cpp",
+  "file": "D:/projects/Acheron/src/ecs/query.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/query.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\systems\\ai_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\ai_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/ai_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/systems/ai_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\systems\\animation_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\animation_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/animation_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/systems/animation_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\systems\\audio_event_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\audio_event_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/audio_event_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/systems/audio_event_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\systems\\combat_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\combat_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/combat_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/systems/combat_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\systems\\movement_system.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\systems\\movement_system.cpp",
+  "file": "D:/projects/Acheron/src/ecs/systems/movement_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/systems/movement_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\world.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\world.cpp",
+  "file": "D:/projects/Acheron/src/ecs/world.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/world.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\ecs\\world_serializer.cpp.obj -c D:\\projects\\Acheron\\src\\ecs\\world_serializer.cpp",
+  "file": "D:/projects/Acheron/src/ecs/world_serializer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/ecs/world_serializer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\threading\\lockfree_queue.cpp.obj -c D:\\projects\\Acheron\\src\\threading\\lockfree_queue.cpp",
+  "file": "D:/projects/Acheron/src/threading/lockfree_queue.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/threading/lockfree_queue.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\threading\\thread.cpp.obj -c D:\\projects\\Acheron\\src\\threading\\thread.cpp",
+  "file": "D:/projects/Acheron/src/threading/thread.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/threading/thread.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\simulation\\scheduler\\job_system.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\scheduler\\job_system.cpp",
+  "file": "D:/projects/Acheron/src/simulation/scheduler/job_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/simulation/scheduler/job_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\simulation\\scheduler\\phase_barrier.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\scheduler\\phase_barrier.cpp",
+  "file": "D:/projects/Acheron/src/simulation/scheduler/phase_barrier.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/simulation/scheduler/phase_barrier.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\simulation\\scheduler\\task_graph.cpp.obj -c D:\\projects\\Acheron\\src\\simulation\\scheduler\\task_graph.cpp",
+  "file": "D:/projects/Acheron/src/simulation/scheduler/task_graph.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/simulation/scheduler/task_graph.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\file_system.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\file_system.cpp",
+  "file": "D:/projects/Acheron/src/utilities/file_system.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/file_system.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\hash_utils.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\hash_utils.cpp",
+  "file": "D:/projects/Acheron/src/utilities/hash_utils.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/hash_utils.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\json_serializer.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\json_serializer.cpp",
+  "file": "D:/projects/Acheron/src/utilities/json_serializer.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/json_serializer.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\memory\\frame_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\memory\\frame_allocator.cpp",
+  "file": "D:/projects/Acheron/src/utilities/memory/frame_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/memory/frame_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\memory\\linear_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\memory\\linear_allocator.cpp",
+  "file": "D:/projects/Acheron/src/utilities/memory/linear_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/memory/linear_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\memory\\memory_tracker.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\memory\\memory_tracker.cpp",
+  "file": "D:/projects/Acheron/src/utilities/memory/memory_tracker.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/memory/memory_tracker.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\memory\\pool_allocator.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\memory\\pool_allocator.cpp",
+  "file": "D:/projects/Acheron/src/utilities/memory/pool_allocator.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/memory/pool_allocator.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\profiler.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\profiler.cpp",
+  "file": "D:/projects/Acheron/src/utilities/profiler.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/profiler.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\c++.exe -DACHERON_UNIT_TEST -ID:/projects/Acheron/src -ID:/projects/Acheron -O3 -DNDEBUG -std=c++20 -Wall -Wextra -Wno-unused-parameter -o CMakeFiles\\acheron_unit_tests.dir\\src\\utilities\\thread_pool.cpp.obj -c D:\\projects\\Acheron\\src\\utilities\\thread_pool.cpp",
+  "file": "D:/projects/Acheron/src/utilities/thread_pool.cpp",
+  "output": "D:/projects/Acheron/build/CMakeFiles/acheron_unit_tests.dir/src/utilities/thread_pool.cpp.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -ID:/projects/Acheron/build/_deps/raylib-src/src -isystem D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=gnu99 -o _deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\raudio.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\raudio.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/raudio.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -ID:/projects/Acheron/build/_deps/raylib-src/src -isystem D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=gnu99 -o _deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\rcore.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\rcore.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/rcore.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -ID:/projects/Acheron/build/_deps/raylib-src/src -isystem D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=gnu99 -o _deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\rmodels.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\rmodels.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/rmodels.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -ID:/projects/Acheron/build/_deps/raylib-src/src -isystem D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=gnu99 -o _deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\rshapes.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\rshapes.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/rshapes.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -ID:/projects/Acheron/build/_deps/raylib-src/src -isystem D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=gnu99 -o _deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\rtext.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\rtext.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/rtext.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -ID:/projects/Acheron/build/_deps/raylib-src/src -isystem D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=gnu99 -o _deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\rtextures.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\rtextures.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/rtextures.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS -ID:/projects/Acheron/build/_deps/raylib-src/src -isystem D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=gnu99 -o _deps\\raylib-build\\raylib\\CMakeFiles\\raylib.dir\\utils.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\utils.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/utils.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\context.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\context.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/context.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\init.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\init.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/init.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\input.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\input.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/input.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\monitor.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/monitor.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\platform.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\platform.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/platform.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\vulkan.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/vulkan.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\window.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\window.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/window.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\egl_context.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/egl_context.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\osmesa_context.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\null_init.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\null_init.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/null_init.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\null_monitor.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\null_monitor.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/null_monitor.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\null_window.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\null_window.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/null_window.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\null_joystick.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\null_joystick.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/null_joystick.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_module.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\win32_module.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/win32_module.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\win32_time.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/win32_time.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\win32_thread.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/win32_thread.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\win32_init.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/win32_init.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\win32_joystick.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/win32_joystick.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\win32_monitor.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/win32_monitor.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\win32_window.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/win32_window.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj"
+},
+{
+  "directory": "D:/projects/Acheron/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/include -ID:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src -ID:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -std=c99 -Wall -o _deps\\raylib-build\\raylib\\external\\glfw\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj -c D:\\projects\\Acheron\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\wgl_context.c",
+  "file": "D:/projects/Acheron/build/_deps/raylib-src/src/external/glfw/src/wgl_context.c",
+  "output": "D:/projects/Acheron/build/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
+}
+]

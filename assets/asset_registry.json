@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "style": "Minimal Neon Cyberpunk Systems Simulator",
+  "fonts": {
+    "primary": "assets/fonts/orbitron/Orbitron-Regular.ttf",
+    "primary_bold": "assets/fonts/orbitron/Orbitron-Bold.ttf"
+  },
+  "svg_icons": {
+    "district_res": "assets/generated/svg/district_res.svg",
+    "district_com": "assets/generated/svg/district_com.svg",
+    "district_ind": "assets/generated/svg/district_ind.svg",
+    "warning_congestion": "assets/generated/svg/congestion_warning.svg",
+    "warning_power": "assets/generated/svg/power_outage.svg",
+    "economy_up": "assets/generated/svg/economy_up.svg",
+    "economy_down": "assets/generated/svg/economy_down.svg"
+  },
+  "tilemaps": {
+    "cyberpunk_base": "assets/tiles/tileset_cyberpunk.png",
+    "roads": "assets/roads/neon_roads.png"
+  },
+  "palette": {
+    "background": "#0F141A",
+    "residential": "#00FF99",
+    "commercial": "#00CCFF",
+    "industrial": "#FFCC00",
+    "alert": "#FF3333"
+  }
+}
