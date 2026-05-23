@@ -106,21 +106,42 @@ foreach ($pkg in $packages) {
     }
 }
 
-# Visual Studio Build Tools (Requires specific workloads)
-Write-Info "Checking Visual Studio Build Tools..."
+# Visual Studio Build Tools & C++ Workload
+Write-Info "Checking Visual Studio and C++ Workload..."
 $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+$vsInstaller = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vs_installer.exe"
 $vsInstalled = $false
+
 if (Test-Path $vswhere) {
+    # Check if the C++ workload is already installed on any VS instance
     $vsPath = & $vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
     if (-not [string]::IsNullOrWhiteSpace($vsPath)) {
         $vsInstalled = $true
-        Write-Success "Visual Studio Build Tools already installed at: $vsPath"
+        Write-Success "Visual Studio with C++ Workload found at: $vsPath"
+    } else {
+        # VS is installed, but missing the C++ workload. Find the path to modify.
+        $anyVsPath = & $vswhere -latest -products * -property installationPath
+        if (-not [string]::IsNullOrWhiteSpace($anyVsPath) -and (Test-Path $vsInstaller)) {
+            Write-Info "Visual Studio found at $anyVsPath but missing C++ workload."
+            Write-Info "Modifying installation to add C++ workload (This may take a few minutes)..."
+            
+            $proc = Start-Process -FilePath $vsInstaller -ArgumentList "modify --installPath `"$anyVsPath`" --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --quiet --wait --norestart" -Wait -PassThru
+            if ($proc.ExitCode -eq 0 -or $proc.ExitCode -eq 3010) {
+                $vsInstalled = $true
+                Write-Success "Successfully added C++ Workload to Visual Studio."
+            } else {
+                Write-ErrorAndExit "Failed to modify Visual Studio. Exit code: $($proc.ExitCode)"
+            }
+        }
     }
 }
 
 if (-not $vsInstalled) {
-    Write-Info "Installing Visual Studio Build Tools (This may take a few minutes)..."
+    Write-Info "Visual Studio not found. Installing VS Build Tools 2022..."
     winget install Microsoft.VisualStudio.2022.BuildTools --override "--wait --quiet --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended" --accept-package-agreements --accept-source-agreements
+    if ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne 3010) {
+        Write-ErrorAndExit "Failed to install Visual Studio Build Tools. Exit code: $LASTEXITCODE"
+    }
     Write-Success "Installed Visual Studio Build Tools."
 }
 
@@ -153,19 +174,30 @@ $env:VCPKG_ROOT = $vcpkgDir
 # STEP 5: Clone or Update Acheron Repository
 # ==============================================================================
 Write-Step "Fetching Acheron Source Code"
-$targetDir = "$env:USERPROFILE\Acheron"
-$repoUrl = "https://github.com/Harish020904/Acheron.git" # Replace with actual if needed
+$currentDir = Get-Location
+$repoUrl = "https://github.com/Harish020904/Acheron.git" 
 
-if (Test-Path "$targetDir\.git") {
-    Write-Info "Repository exists at $targetDir. Pulling latest changes..."
-    Set-Location $targetDir
-    git pull origin main
-    Write-Success "Repository updated."
+# First check if the user is already inside the Acheron repository
+if (Test-Path "$currentDir\.git") {
+    $targetDir = $currentDir.Path
+    Write-Info "Executing from within existing repository at $targetDir"
+    
+    # Optional: pull latest if needed, but since they are running it locally, we just stay here.
+    # git pull origin main
+    Write-Success "Repository located."
 } else {
-    Write-Info "Cloning Acheron to $targetDir..."
-    git clone $repoUrl $targetDir
-    Set-Location $targetDir
-    Write-Success "Repository cloned."
+    $targetDir = "$env:USERPROFILE\Acheron"
+    if (Test-Path "$targetDir\.git") {
+        Write-Info "Repository exists at $targetDir. Pulling latest changes..."
+        Set-Location $targetDir
+        git pull origin main
+        Write-Success "Repository updated."
+    } else {
+        Write-Info "Cloning Acheron to $targetDir..."
+        git clone $repoUrl $targetDir
+        Set-Location $targetDir
+        Write-Success "Repository cloned."
+    }
 }
 
 # ==============================================================================
@@ -173,11 +205,16 @@ if (Test-Path "$targetDir\.git") {
 # ==============================================================================
 Write-Step "Configuring Developer Environment"
 
-$vsPath = & $vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath
+$vsPath = (& $vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath) | Select-Object -First 1
+
+if ([string]::IsNullOrWhiteSpace($vsPath)) {
+    Write-ErrorAndExit "vswhere could not find the installation path for Visual Studio with C++ tools."
+}
+
 $vcvars = "$vsPath\VC\Auxiliary\Build\vcvars64.bat"
 
 if (-not (Test-Path $vcvars)) {
-    Write-ErrorAndExit "Could not locate vcvars64.bat"
+    Write-ErrorAndExit "Could not locate vcvars64.bat at $vcvars"
 }
 
 Write-Info "Loading MSVC environment variables..."
